@@ -9,12 +9,14 @@ module RubyI2C
       MEASURE_TEMP_CMD      = 0xE3
       READ_FIRMWARE_REV_CMD = [ 0x84, 0xB8 ]
       READ_SERIAL_NUM_CMD   = [ 0xFA, 0x0F, 0xFC, 0xC9 ]
+      RESET_CMD             = 0xFE
 
       def self.address; ADDRESS; end
       def self.measure_rh_cmd; MEASURE_RH_CMD; end
       def self.measure_temp_cmd; MEASURE_TEMP_CMD; end
       def self.read_firmware_rev_cmd; READ_FIRMWARE_REV_CMD; end
       def self.read_serial_num_cmd; READ_SERIAL_NUM_CMD; end
+      def self.reset_cmd; RESET_CMD; end
 
       def command(cmd, length=1, rest=nil)
         super.unpack("C"*length)
@@ -58,6 +60,11 @@ module RubyI2C
         ( (125 * measure(self.class.measure_rh_cmd)) / 65535 ) - 6
       end
       alias_method :rh, :relative_humidity
+
+
+      def reset
+        write self.class.reset_cmd
+      end
 
 
       def serial_number
