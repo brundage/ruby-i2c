@@ -3,7 +3,7 @@ module RubyI2C
   class Adapter
     class Base
 
-      def initialize(force: false)
+      def initialize(force: false, **args)
         @slave_addr = force ? I2C_SLAVE_FORCE : I2C_SLAVE
       end
 

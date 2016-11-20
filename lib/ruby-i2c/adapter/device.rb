@@ -83,7 +83,7 @@ module RubyI2C
 
 
       def encode(*data)
-         data.pack "C*"
+         data.flatten.pack "C*"
       end
 
 
