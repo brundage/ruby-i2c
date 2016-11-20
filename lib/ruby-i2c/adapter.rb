@@ -1,5 +1,5 @@
 require 'pp'
-class RubyI2C
+module RubyI2C
   class Adapter
 
     autoload :Base, File.join('ruby-i2c', 'adapter', 'base')

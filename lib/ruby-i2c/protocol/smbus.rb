@@ -1,4 +1,4 @@
-class RubyI2C
+module RubyI2C
   module Protocol
     module SMBus
 

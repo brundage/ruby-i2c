@@ -27,9 +27,9 @@ describe RubyI2C::Adapter::Base do
   end
 
 
-  [ :read, :write ].each do |meth|
+  [ :command, :read, :write ].each do |meth|
     it "leaves ##{meth} up to sub-classes" do
-      expect{ subject.send(meth, nil) }.to raise_error NotImplementedError
+      expect{ subject.send(meth, nil, nil) }.to raise_error NotImplementedError
     end
   end
 

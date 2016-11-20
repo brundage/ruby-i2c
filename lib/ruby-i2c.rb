@@ -1,7 +1,8 @@
 require 'ruby-i2c/version'
-class RubyI2C
+module RubyI2C
 
   autoload :Adapter, File.join('ruby-i2c','adapter')
+  autoload :Device, File.join('ruby-i2c', 'device')
   autoload :Protocol, File.join('ruby-i2c', 'protocol')
 
 end

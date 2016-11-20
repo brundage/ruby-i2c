@@ -1,4 +1,4 @@
-class RubyI2C
+module RubyI2C
   class Adapter
     class Device < Base
 

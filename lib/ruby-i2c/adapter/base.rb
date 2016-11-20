@@ -1,10 +1,15 @@
 require 'pp'
-class RubyI2C
+module RubyI2C
   class Adapter
     class Base
 
       def initialize(force: false)
         @slave_addr = force ? I2C_SLAVE_FORCE : I2C_SLAVE
+      end
+
+
+      def command(address, cmd, length=1, rest=nil)
+        raise NotImplementedError
       end
 
 
