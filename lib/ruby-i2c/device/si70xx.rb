@@ -97,7 +97,7 @@ module RubyI2C
 
 
       def sift_serial_command(cmd)
-        command(cmd,8).values_at(0,2,4,6)
+        command(cmd, 8).select.with_index { |_, i| i.even? }
       end
 
     end
