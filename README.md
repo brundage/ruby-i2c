@@ -1,8 +1,10 @@
-# Ruby::I2c
+[![Code Climate](https://codeclimate.com/github/brundage/ruby-i2c/badges/gpa.svg)](https://codeclimate.com/github/brundage/ruby-i2c)
+[![Coverage Status](https://coveralls.io/repos/github/brundage/ruby-i2c/badge.svg?branch=master)](https://coveralls.io/github/brundage/ruby-i2c?branch=master)
+[![Build Status](https://travis-ci.org/brundage/ruby-i2c.svg?branch=master)](https://travis-ci.org/brundage/ruby-i2c)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby/i2c`. To experiment with that code, run `bin/console` for an interactive prompt.
+# RubyI2c
 
-TODO: Delete this and the text above, and describe your gem
+Yet another Ruby I2C interface
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Don't use this yet
 
 ## Development
 
