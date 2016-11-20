@@ -2,8 +2,10 @@ describe RubyI2C::Adapter::Device do
 
   let(:address) { nil }
 
-  it 'has a device by default' do
-    expect(subject.device_file).not_to be_nil
+  if( Dir.glob("/dev/i2c-*").any? )
+    it 'has a device by default' do
+      expect(subject.device_file).not_to be_nil
+    end
   end
 
 
