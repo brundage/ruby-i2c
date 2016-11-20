@@ -1,6 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/brundage/ruby-i2c/badges/gpa.svg)](https://codeclimate.com/github/brundage/ruby-i2c)
 [![Coverage Status](https://coveralls.io/repos/github/brundage/ruby-i2c/badge.svg?branch=master)](https://coveralls.io/github/brundage/ruby-i2c?branch=master)
 [![Build Status](https://travis-ci.org/brundage/ruby-i2c.svg?branch=master)](https://travis-ci.org/brundage/ruby-i2c)
+[![security](https://hakiri.io/github/brundage/ruby-i2c/master.svg)](https://hakiri.io/github/brundage/ruby-i2c/master)
 
 # RubyI2c
 
