@@ -2,9 +2,9 @@ require 'pp'
 module RubyI2C
   class Adapter
 
-    autoload :Base, File.join('ruby-i2c', 'adapter', 'base')
-    autoload :Device, File.join('ruby-i2c', 'adapter', 'device')
-    autoload :Dummy, File.join('ruby-i2c', 'adapter', 'dummy')
+    autoload :Base, File.join('ruby_i2c', 'adapter', 'base')
+    autoload :Device, File.join('ruby_i2c', 'adapter', 'device')
+    autoload :Dummy, File.join('ruby_i2c', 'adapter', 'dummy')
 
     I2C_SLAVE       = 0x0703
     I2C_SLAVE_FORCE = 0x0706
