@@ -64,6 +64,11 @@ module RubyI2C
       end
 
 
+      def encode(*data)
+         data.flatten.pack "C*"
+      end
+
+
       def handle(e)
         STDERR.puts "EIO (#{e.errno})"
         raise
@@ -79,11 +84,6 @@ module RubyI2C
         prep_handle address
         yield
         close
-      end
-
-
-      def encode(*data)
-         data.flatten.pack "C*"
       end
 
 

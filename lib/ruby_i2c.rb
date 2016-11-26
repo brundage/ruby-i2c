@@ -3,7 +3,6 @@ module RubyI2C
 
   autoload :Adapter, File.join('ruby_i2c','adapter')
   autoload :Device, File.join('ruby_i2c', 'device')
-  autoload :Protocol, File.join('ruby_i2c', 'protocol')
 
 end
 

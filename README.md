@@ -12,7 +12,7 @@ Yet another Ruby I2C interface
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruby-i2c'
+gem 'ruby_i2c'
 ```
 
 And then execute:
@@ -21,7 +21,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ruby-i2c
+    $ gem install ruby_i2c
 
 ## Usage
 
