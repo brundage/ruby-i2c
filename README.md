@@ -25,7 +25,17 @@ Or install it yourself as:
 
 ## Usage
 
-Don't use this yet
+This library supports the Silicon Labs si70xx chip (for now, pull requests encouraged)
+
+```
+irb(main):001:0> s = RubyI2C::Device::SI70XX.new
+=> #<RubyI2C::Device::SI70XX:0x56b9a058 @adapter=#<RubyI2C::Adapter::UnixDevice:0x56ae57d0 @slave_addr=1795, @device_file="/dev/i2c-1", @mutex=#<Thread::Mutex:0x56ad7fb8>>, @address=64>
+
+irb(main):002:0> s.relative_humidity
+=> 57
+irb(main):003:0> s.temperature
+=> 22.176728515624994
+```
 
 ## Development
 

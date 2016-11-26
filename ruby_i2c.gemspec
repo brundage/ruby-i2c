@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{YA Ruby i2c library}
   spec.description   = %q{Yet another ruby i2c library}
-  spec.homepage      = "https://github.com/brundage/ruby_i2c"
+  spec.homepage      = "https://github.com/brundage/ruby-i2c"
 
   spec.require_paths = ["lib"]
 
