@@ -26,14 +26,11 @@ Gem::Specification.new do |spec|
       'lib/ruby_i2c.rb',
       'lib/ruby_i2c/adapter.rb',
       'lib/ruby_i2c/adapter/base.rb',
-      'lib/ruby_i2c/adapter/device.rb',
       'lib/ruby_i2c/adapter/dummy.rb',
+      'lib/ruby_i2c/adapter/unix_device.rb',
       'lib/ruby_i2c/device.rb',
       'lib/ruby_i2c/device/base.rb',
       'lib/ruby_i2c/device/si70xx.rb',
-      'lib/ruby_i2c/protocol.rb',
-      'lib/ruby_i2c/protocol/full.rb',
-      'lib/ruby_i2c/protocol/smbus.rb',
       'lib/ruby_i2c/version.rb',
       'ruby_i2c.gemspec'
   ]
