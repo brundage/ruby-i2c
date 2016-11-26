@@ -1,4 +1,4 @@
-describe RubyI2C::Adapter::Device do
+describe RubyI2C::Adapter::UnixDevice do
 
   let(:address) { nil }
 

@@ -1,7 +1,7 @@
 module RubyI2C
   class Adapter
     class Dummy < Base
-      # For testing devices
+      # An Adapter with no hardware (for unit testing a Device)
 
       def initialize(force: false, returns: {})
         super

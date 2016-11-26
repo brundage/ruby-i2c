@@ -4,7 +4,7 @@ module RubyI2C
 
       attr_reader :adapter, :address
 
-      def initialize(adapter: RubyI2C::Adapter::Device.new, address: nil)
+      def initialize(adapter: RubyI2C::Adapter::UnixDevice.new, address: nil)
         @adapter = adapter
         @address = address
       end

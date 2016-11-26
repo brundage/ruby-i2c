@@ -1,6 +1,8 @@
 module RubyI2C
   class Adapter
-    class Device < Base
+    class UnixDevice < Base
+      # File-based Adapter via the Unix /dev filesystem
+
 
       def self.default_device_file; Dir.glob('/dev/i2c-*').sort.first; end
       def self.default_mutex; Mutex.new; end

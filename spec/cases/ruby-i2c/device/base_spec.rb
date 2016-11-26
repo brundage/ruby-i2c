@@ -2,7 +2,7 @@ describe RubyI2C::Device::Base do
 
 
   it 'has an device adapter by default' do
-    expect(subject.adapter).to be_a RubyI2C::Adapter::Device
+    expect(subject.adapter).to be_a RubyI2C::Adapter::UnixDevice
   end
 
 
