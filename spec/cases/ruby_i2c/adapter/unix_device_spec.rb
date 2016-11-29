@@ -1,6 +1,7 @@
 describe RubyI2C::Adapter::UnixDevice do
 
   let(:address) { nil }
+  let(:command) { 0 }
 
   if( Dir.glob("/dev/i2c-*").any? )
     it 'has a device by default' do
@@ -15,7 +16,6 @@ describe RubyI2C::Adapter::UnixDevice do
 
   context 'handle operations' do
 
-    let(:command) { 0 }
     let(:handle) { double :handle }
     let(:read_return) { :blark }
     let(:write_return) { :llama }
@@ -38,6 +38,22 @@ describe RubyI2C::Adapter::UnixDevice do
 
     it 'writes' do
       expect( subject.write(address, command) ).to eq write_return
+    end
+
+  end
+
+
+  describe 'error handling' do
+    let(:address) { 0 }
+    let(:error) { SystemCallError }
+
+    before do
+      allow(subject).to receive(:operate).and_raise(error)
+    end
+
+
+    it 're-raises the error' do
+      expect{subject.send(:handle, error.new('llama'))}.to raise_error(error)
     end
 
   end

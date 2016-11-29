@@ -73,7 +73,7 @@ module RubyI2C
 
       def handle(e)
         STDERR.puts "EIO (#{e.errno})"
-        raise
+        raise e
       end
 
 
