@@ -1,4 +1,3 @@
-require 'pp'
 module RubyI2C
   class Adapter
     class Base
